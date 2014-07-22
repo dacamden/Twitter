@@ -15,12 +15,7 @@ var Twit = require('twit'),
 	http = require('http'),
 	store = "tweetLog.json",
 	twitTrack = 'boobs';
-var T = new Twit({
-	consumer_key: 'BMCZ42dOmmBsmFWSl0fAa6NLP',
-	consumer_secret: 'pJTIclSS8fll7Eg1p0Ul1iA3Bdgoegba84Sqp9kHvd0ppwDFrv',
-	access_token: '428111528-pa4olTbPHN19l5tLvYgRD0oE3rKGZDfokDhKvO29',
-	access_token_secret: 'FSQ4kD56TWY4uqmVpSBXen0WDEicVmizLIwmcKheJBxYf'
-})
+
 var stream = T.stream('statuses/filter', {
 	track: twitTrack
 })
